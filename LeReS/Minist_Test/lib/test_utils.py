@@ -1,8 +1,9 @@
 import os
 import numpy as np
 import torch
-from torchsparse import SparseTensor
-from torchsparse.utils import sparse_collate_fn, sparse_quantize
+from torchsparse.tensor import SparseTensor
+from torchsparse.utils.collate import sparse_collate_fn
+from torchsparse.utils.quantize import sparse_quantize
 from plyfile import PlyData, PlyElement
 
 
